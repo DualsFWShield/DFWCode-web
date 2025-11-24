@@ -31,7 +31,7 @@ DFWCode est une application web moderne et intuitive pour créer, personnaliser 
 
 ## Licence & Activation
 - Une clé d'activation PRO est requise pour débloquer les fonctionnalités premium.
-- Pour acheter une clé, contactez : pfazinc@gmail.com
+- Pour obtenir une clé, contactez-moi à pfazinc@gmail.com ou envoyez directement votre contribution via PayPal : https://paypal.me/DualsFWShield et ajoutez simplement “Achat clé + votre email” dans la note du paiement.
 - La validation se fait directement dans l'interface via le panneau Activation.
 - Si vous parvenez à contourner le système d’activation, vous êtes libre d’en profiter (oui, le hacking n’est pas sanctionné sur notre app), mais il vous est strictement interdit d’en divulguer la méthode.
 

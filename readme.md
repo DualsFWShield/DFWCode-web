@@ -33,28 +33,16 @@ DFWCode est une application web moderne et intuitive pour créer, personnaliser 
 - Une clé d'activation PRO est requise pour débloquer les fonctionnalités premium.
 - Pour acheter une clé, contactez : pfazinc@gmail.com
 - La validation se fait directement dans l'interface via le panneau Activation.
-
-## Signalement de vulnérabilité (Programme de divulgation responsable)
-Nous encourageons les chercheuses et chercheurs en sécurité à nous aider à améliorer la sécurité du projet. Si vous découvrez une vulnérabilité :
-1. Ne l'exploitez pas.
-2. Contactez-nous en toute confidentialité à pfazinc@gmail.com en fournissant les détails pour reproduire le problème.
-3. Après validation et correction, nous proposerons une récompense ou l'attribution d'un accès PRO gratuit en gage de reconnaissance.
-
-Important : nous n'encourageons pas le piratage ni l'exploitation malveillante. Toute action illégale ou destructrice ne sera pas tolérée. Le programme de divulgation responsable existe pour récompenser la coopération éthique.
+- Si vous parvenez à contourner le système d’activation, vous êtes libre d’en profiter (oui, le hacking n’est pas sanctionné sur notre app), mais il vous est strictement interdit d’en divulguer la méthode.
 
 ## Administration & Outils internes
 - Panneau d'administration interne pour création/licences et génération de clés.
 - Outils pour testing et génération de lots de licences (usage interne/contrôlé).
-
-## Déploiement et support
-- La version actuelle est packagée pour un déploiement simple sur un hébergement statique ou serveur léger.
-- Pour demandes de personnalisation, support technique ou intégration B2B, contactez pfazinc@gmail.com.
 
 ## Contributions
 - Ce projet est livré comme un produit démonstratif. Les contributions sont les bienvenues via PR/patches si vous souhaitez améliorer l'interface, ajouter des protocoles ou améliorer la sécurité.
 
 ## Mentions légales
 - Les fonctionnalités PRO doivent être activées par une licence valide — tout contournement non autorisé est interdit.
-- En participant à notre programme de divulgation responsable, vous vous engagez à une divulgation éthique et coordonnée (pas d'exploitation publique avant correctif).
 
 Merci d'utiliser DFWCode — des QR codes élégants, puissants et adaptés à vos besoins professionnels.

@@ -126,7 +126,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    position: relative;
+    position: sticky;
 }
 
 .preview-header {
@@ -631,3 +631,4 @@ h2 {
             background: var(--bg);
         }
     }
+}

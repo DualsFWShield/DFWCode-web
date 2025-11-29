@@ -1,7 +1,7 @@
 import { state } from './state.js';
 import { updateQR, updateFrame } from './qr.js';
-// Wait, I put updateBar in barcode.js. I should import it from there.
 import { updateBar as updateBarReal } from './barcode.js';
+import { populateIconModal } from './icons.js';
 
 export function switchMode(m) {
     state.mode = m;
@@ -31,4 +31,19 @@ export function setupDropZone(zoneId, fileHandler) {
         e.preventDefault(); dropZone.classList.remove('dragover');
         if (e.dataTransfer.files.length > 0) fileHandler(e.dataTransfer.files[0]);
     });
+}
+
+export function openIconModal() {
+    if (state.isPro) {
+        populateIconModal();
+        document.getElementById('icon-modal').style.display = 'flex';
+    } else {
+        openModal(); // Auth modal
+    }
+}
+
+export function closeIconModal() { document.getElementById('icon-modal').style.display = 'none'; }
+
+export function filterIcons(term) {
+    import('./icons.js').then(m => m.filterIcons(term));
 }

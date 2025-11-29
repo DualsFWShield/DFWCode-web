@@ -63,6 +63,45 @@ export const Templates = [
             cornerShape: 'dot',
             dotShape: 'extra-rounded'
         }
+    },
+    {
+        id: 'instagram',
+        name: 'Instagram',
+        preview: '#d62976',
+        config: {
+            dots: '#d62976',
+            bg: '#ffffff',
+            shape: 'dots',
+            corner: '#fa7e1e',
+            cornerShape: 'extra-rounded',
+            dotShape: 'dot'
+        }
+    },
+    {
+        id: 'facebook',
+        name: 'Facebook',
+        preview: '#1877f2',
+        config: {
+            dots: '#1877f2',
+            bg: '#ffffff',
+            shape: 'square',
+            corner: '#1877f2',
+            cornerShape: 'square',
+            dotShape: 'square'
+        }
+    },
+    {
+        id: 'wifi',
+        name: 'WiFi',
+        preview: '#000000',
+        config: {
+            dots: '#000000',
+            bg: '#ffffff',
+            shape: 'rounded',
+            corner: '#000000',
+            cornerShape: 'dot',
+            dotShape: 'rounded'
+        }
     }
 ];
 

@@ -360,3 +360,58 @@ export function download(ext) {
     };
     qrImg.src = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(s)));
 }
+
+export async function shareQR() {
+    if (!state.isPro) { openModal(); return; }
+
+    const wrapper = document.getElementById('qr-wrapper');
+    const svg = wrapper.querySelector("svg");
+    const s = new XMLSerializer().serializeToString(svg);
+    const cvs = document.createElement('canvas');
+    const img = new Image();
+
+    img.onload = () => {
+        cvs.width = 1000;
+        cvs.height = 1000;
+        const ctx = cvs.getContext('2d');
+        ctx.fillStyle = document.getElementById('colBg').value || '#ffffff';
+        ctx.fillRect(0, 0, cvs.width, cvs.height);
+        ctx.drawImage(img, 0, 0);
+
+        cvs.toBlob(async (blob) => {
+            if (navigator.share) {
+                try {
+                    const file = new File([blob], "dfw-qr.png", { type: "image/png" });
+                    await navigator.share({
+                        title: 'DFW QR Code',
+                        text: 'Here is my QR Code created with DFWCode!',
+                        files: [file]
+                    });
+                } catch (err) {
+                    console.error('Share failed:', err);
+                }
+            } else {
+                alert('Sharing is not supported on this device/browser.');
+            }
+        });
+    };
+    img.src = "data:image/svg+xml;base64," + btoa(unescape(encodeURIComponent(s)));
+}
+
+export function printQR() {
+    const wrapper = document.getElementById('qr-wrapper');
+    const svg = wrapper.querySelector("svg");
+    const s = new XMLSerializer().serializeToString(svg);
+
+    const win = window.open('', '', 'height=600,width=800');
+    win.document.write('<html><head><title>Print QR</title>');
+    win.document.write('</head><body style="display:flex;justify-content:center;align-items:center;height:100vh;">');
+    win.document.write(svg.outerHTML);
+    win.document.write('</body></html>');
+    win.document.close();
+    win.focus();
+    setTimeout(() => {
+        win.print();
+        win.close();
+    }, 500);
+}

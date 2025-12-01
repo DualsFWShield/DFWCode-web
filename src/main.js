@@ -5,7 +5,7 @@ import { AdminTools } from './modules/admin.js';
 import {
     renderQrInputs, updateQR, debouncedQR, setQrType, setShape,
     processLogoFile, processBgFile, clearBg, toggleGlobalColor,
-    download, updateFrame
+    download, updateFrame, shareQR, printQR
 } from './modules/qr.js';
 import { onBarTypeChange, updateBar } from './modules/barcode.js';
 import { switchMode, setupDropZone } from './modules/ui.js';
@@ -39,6 +39,8 @@ window.clearBg = clearBg;
 window.toggleGlobalColor = toggleGlobalColor;
 window.download = download;
 window.updateFrame = updateFrame;
+window.shareQR = shareQR;
+window.printQR = printQR;
 
 window.onBarTypeChange = onBarTypeChange;
 window.updateBar = updateBar;
